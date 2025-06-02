@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>로그인 & 회원가입</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px; 
+      max-width: 400px; 
+      margin: auto; 
+      background-image: url(onewayedu_bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      color: #333;
+    }
+
+    /* input과 button 공통 스타일 */
+    input, button { 
+      display: block; 
+      width: 100%;         /* 가로 100% */
+      padding: 12px 15px;  /* 위아래 12px, 좌우 15px */
+      font-size: 18px;     /* 글자 크기 */
+      margin: 10px 0;      /* 위아래 간격 10px */
+      box-sizing: border-box; /* 패딩 포함해서 크기 계산 */
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #2261ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #1a47cc;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: white
+    }
+  </style>
+</head>
+<body>
+  <h1>학교 자동화 사이트</h1>
+
+  <h2>회원가입</h2>
+  <input type="text" id="signupId" placeholder="아이디">
+  <input type="password" id="signupPw" placeholder="비밀번호">
+  <button onclick="signup()">회원가입</button>
+
+  <h2>로그인</h2>
+  <input type="text" id="loginId" placeholder="아이디">
+  <input type="password" id="loginPw" placeholder="비밀번호">
+  <button onclick="login()">로그인</button>
+
+  <script>
+    function signup() {
+      alert('여기까지가 최선선');
+    }
+    function login() {
+      alert('여기까지가 최선');
+    }
+  </script>
+</body>
+</html>
