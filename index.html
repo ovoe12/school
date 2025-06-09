@@ -2,14 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>풍산고ㄹㄹ onewayedu ver.2</title>
+  <title>풍산고 onewayedu ver.2</title>
+
   <style>
     body {
       margin: 0;
       height: 100vh;
-      background: #f0f0f0;
+      background-color: #f0f0f0;
+      background-image: url(bg3.jpg); /* 배경 이미지 */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
       font-family: Arial, sans-serif;
       position: relative;
+      padding: 0;
     }
 
     /* 오른쪽 상단 아이콘 */
@@ -22,103 +28,70 @@
       background-size: contain;
       cursor: pointer;
     }
-  </style>
-    <meta charset="utf-8">
-    <style>
-      body {
-        background-image: url(bg3.jpg); /* 확장자 포함 */
-        background-size: cover; /* 화면에 꽉 차게 */
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-    </style>
-</head>
-<body>
 
-  <style>
-  h1 {
-    margin-top: 50px;
-    font-size: 40px;
-    text-align: center;
-    font-family: '나눔고딕', 'Arial', sans-serif;
-    color: #333; /* 글자색도 바꿔봤어 */
-  }
-</style>
-
-<h1>풍산 원웨이 에듀 ver.2</h1>
-
-<style>
-    /* 전체 페이지 스타일 지정 */
-    body {
-      background-color: #f0f0f0; /* 배경 색상 (연회색) */
-      margin: 0; /* 바깥 여백 제거 */
-      padding: 0; /* 안쪽 여백 제거 */
-      font-family: 'Arial', sans-serif; /* 기본 글꼴 설정 */
+    h1 {
+      margin-top: 50px;
+      font-size: 40px;
+      text-align: center;
+      font-family: '나눔고딕', 'Arial', sans-serif;
+      color: #333;
     }
 
-    /* 버튼들을 담는 컨테이너 (전체를 감싸서 정렬해줌) */
+    /* 버튼들을 담는 컨테이너 */
     .button-container {
-      position: absolute; /* 절대 위치로 지정 */
-      top: 300px; /* 위에서 200px 떨어진 위치에 배치 */
-      left: 50%; /* 화면 왼쪽으로부터 50% 위치에 */
-      transform: translateX(-50%); /* 정확히 가운데 정렬 (X축 반만큼 이동) */
-      display: flex; /* 가로 방향으로 나열 */
-      gap: 40px; /* 버튼들 사이 간격 40px */
+      position: absolute;
+      top: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex; 
+      gap: 40px;
     }
 
     /* 공통 버튼 스타일 */
     .btn {
-      padding: 90px 40px; /* 위아래 90px, 좌우 40px */
-      border: 2px solid black; /* 테두리 두께 2px, 색상 검정 */
-      border-radius: 10px; /* 모서리를 둥글게 10px */
-      font-size: 18px; /* 글자 크기 */
-      cursor: pointer; /* 마우스를 올리면 손가락 모양 */
-      transition: background-color 0.3s; /* 배경색 전환 부드럽게 */
-      color: rgb(24, 23, 23); /* 글자 색상 (어두운 회색) */
+      padding: 90px 40px;
+      border: 2px solid black;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: rgb(24, 23, 23);
     }
 
-    /* 마우스를 버튼에 올렸을 때 배경색 변경 */
     .btn:hover {
-      background-color: #20e619; /* 연한 초록색 */
+      background-color: #20e619;
     }
 
-    /* 첫 번째 버튼 전용 색상 (전자기기 신청) */
     .btn1 {
-      background-color: #ffde22; /* 노란색 */
+      background-color: #ffde22;
     }
 
-    /* 두 번째 버튼 전용 색상 (외출 신청) */
     .btn2 {
-      background-color: #2261ff; /* 파란색 */
-      color: white; /* 글자색은 흰색으로 덮어쓰기 */
+      background-color: #2261ff;
+      color: white;
     }
 
-    /* 세 번째 버튼 전용 색상 (벌점 확인) */
     .btn3 {
-      background-color: #ff5922; /* 하늘색 */
+      background-color: #ff5922;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- 버튼 3개를 포함한 컨테이너 -->
+  <h1>풍산 원웨이 에듀 ver.2</h1>
+
+  <!-- 버튼 3개 컨테이너 -->
   <div class="button-container">
-    <!-- 첫 번째 버튼: 전자기기 신청 -->
     <button class="btn btn1" onclick="location.href='pad.html'">전자기기 신청</button>
-
-    <!-- 두 번째 버튼: 외출 신청 -->
     <button class="btn btn2" onclick="location.href='gohome.html'">외출 신청하기</button>
-
-    <!-- 세 번째 버튼: 벌점 확인 -->
     <button class="btn btn3" onclick="location.href='point.html'">벌점 확인하기</button>
   </div>
 
-
   <!-- 로그인 아이콘 -->
   <div id="loginIcon" title="로그인하기" onclick="location.href='logIn.html'">
-     <img src="log_in.png" alt="로그인 아이콘" style="width:70px; height:70px; cursor:pointer;">
+    <img src="log_in.png" alt="로그인 아이콘" style="width:70px; height:70px; cursor:pointer;">
   </div>
-  
 
 </body>
 </html>
